@@ -487,7 +487,7 @@ const projectEntries = [
     "id": "post-production-montage-strategie-video",
     "title": "Post-Production: Montage & Stratégie Vidéo",
     "subtitle": "Montage & timing",
-    "image": "media/photos/MontageVideo.webp",
+    "image": "media/photos/montagevideo.webp",
     "summary": "Repéré grâce à mes travaux de Level Design, j'ai été intégré dans l'équipe de post-production d'un vidéaste majeur.",
     "description": "Repéré grâce à mes travaux de Level Design, j'ai été intégré dans l'équipe de post-production d'un vidéaste majeur. Ce rôle passionnant dépasse la simple technique logicielle sur DaVinci Resolve ; je participe à la vision globale des projets. De la recherche de documentations à l'écriture de la trame narrative (scripting), en passant par le découpage des séquences et la maîtrise du rythme, chaque cut est pensé pour captiver une audience exigeante et retenir l'attention.",
     "bilan": "Un projet qui cristallise mes ambitions actuelles. Il m'a fait réaliser que le montage est avant tout une stratégie de communication : la réflexion sur le message démarre bien avant d'ouvrir le logiciel.",
