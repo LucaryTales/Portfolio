@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" class="has-navbar-fixed-top has-navbar-fixed-bottom">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Site beta</title>
+
+    <link rel="stylesheet" href="FontAwesome/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- NAVBAR -->
+        <nav class="navbar is-fixed-top pt-1" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbar-main">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbar-main" class="navbar-menu">
+                <div class="navbar-start scroll-behavior-smooth">
+
+                    <a class="image is-48x48 ml-3 mr-1 mt-1" href="index.html#hero">
+                    <img class="is-rounded" src="media/images/navPP.webp" alt="Photo de profil de la navbar"/>
+                    </a>
+
+                    <a class="navbar-item" href="index.html#bio">
+                        Bio
+                    </a>
+
+                    <a class="navbar-item" href="index.html#competences">
+                        Compétences
+                    </a>
+
+                    <a class="navbar-item" href="index.html#projets">
+                        Projets
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button
+                                    is-dark
+                                    is-outlined
+                                    is-rounded" href="media/CV/CV_Lee-Loup_Robert.pdf" target="_blank">
+
+                                <span>CV</span>
+                                <span class="icon">
+                                    <i class="fas fa-download"></i>
+                                </span>
+                            </a>
+                            <a class="button
+                                    is-dark
+                                    is-outlined
+                                    is-rounded" href="#contacts">
+
+                                <span>contact</span>
+                                <span class="icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="container pt-6 my-6 is-flex is-justify-content-center">
+                <div id="heroWrapper" class="hero-wrapper">
+
+
+                    <!-- PHOTO -->
+                    <figure class="image hero-photo">
+                        <img src="media/images/Heroprincipal.webp" alt="Lee-Loup Robert" fetchpriority="high">
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Titre -->
+            <div class="is-flex is-align-items-center is-justify-content-center mb-4">
+                <div class="is-flex is-flex-direction-column is-align-items-center mr-4">
+                    <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                    <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                </div>
+
+                <h2 class="title is-3-mobile is-2-tablet mb-0">Lee-Loup Robert</h2>
+
+                <div class="is-flex is-flex-direction-column is-align-items-center ml-4">
+                    <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                    <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                </div>
+            </div>
+                            
+
+            <!-- TEXTE -->
+            <p class="has-text-centered is-size-5 px-4 mb-6">
+                Étudiant en BUT MMI à Lannion, je suis un créatif touche-à-tout passionné de game design,
+                de dessin et d'audiovisuel. Freelance, Builder Minecraft professionnel, Développeur front-end et
+                amateur de doublage, je conçois des expériences qui mêlent esthétique et technique.
+                Curieux, autonome et toujours à fond dans ce que j'entreprends, bienvenue sur mon portfolio !
+            </p>
+
+            <!-- BOUTON -->
+            <div class="is-flex is-justify-content-center mt-5">
+                <a class="button is-dark is-italic is-rounded is-size-5" href="#bio">
+                    <span>On continue ?</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- PROJECTS LIST -->
+        <section class="pb-6" id="projects-carousel">
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/Events.webp" alt="Événementiel Gaming" ></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Gestion d'Évènement en Ligne</p>
+                            <p class="subtitle is-6">Plus de 100 Joueurs sur Minecraft</p>
+                            <p class="is-size-6">Organisation complète d'événements multijoueurs : level design des épreuves, coordination technique des équipes et support aux participants en direct.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/Builds.webp" alt="Freelance" ></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Expérience Freelance</p>
+                            <p class="subtitle is-6">Level Design & Prestations sur Mesure</p>
+                            <p class="is-size-6">Création de décors 3D immersifs sur commande pour des vidéastes et serveurs, avec gestion complète de la relation client et de la facturation.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/Doublage.webp" alt="Doublage Amateur"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Doublage & Interprétation Vocale</p>
+                            <p class="subtitle is-6">Fictions Sonores et Personnages Animés</p>
+                            <p class="is-size-6">Participation à des projets de doublage amateur avec enregistrement en studio, mixage audio et synchronisation labiale sur Davinci.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/Lastnight.webp" alt="Court-métrage"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Court-Métrage</p>
+                            <p class="subtitle is-6">Last Night</p>
+                            <p class="is-size-6">Production audiovisuelle complète — scénario, tournage et montage sur Davinci — pour un film de sensibilisation à la sécurité routière.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/MontageVideo.webp" alt="Post-Production"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Montage & Stratégie Vidéo</p>
+                            <p class="subtitle is-6">Post-Production pour un Créateur de Contenu</p>
+                            <p class="is-size-6">Scripting, découpage technique et montage sur Davinci au sein de l'équipe d'un créateur majeur. Projet actuellement en cours.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/pokedex.webp" alt="Pokédex"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Site web</p>
+                            <p class="subtitle is-6">Le Pokédex Responsive</p>
+                            <p class="is-size-6">Conception d'une application web 3 pages avec Bulma et Figma, de la phase de wireframing jusqu'à l'intégration front-end finale.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/Affiche_Al'WestFest.webp" alt="Affiche A L'West Fest"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Création d'Affiche</p>
+                            <p class="subtitle is-6">A L'West Fest</p>
+                            <p class="is-size-6">Création d'une affiche fusionnant photographie et illustration numérique pour un rendu print grand format, pilier visuel de toute la campagne.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/podcast.webp" alt="Podcast Radio"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Émission Radio en Direct</p>
+                            <p class="subtitle is-6">L'Intelligence Artificielle face à l'Art</p>
+                            <p class="is-size-6">Animation d'une émission radio en direct avec débat contradictoire sur l'IA et l'art. J'y ai tenu le rôle de présentateur avec un chronométrage à la seconde près.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/audit_marque.webp" alt="Audit Marque"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Audit & Diagnostic Digital</p>
+                            <p class="subtitle is-6">Repenser la Communication d'Édicolor</p>
+                            <p class="is-size-6">Analyse complète du site web — erreurs techniques, ergonomie, accessibilité — avec recommandations stratégiques et benchmarking concurrentiel.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/Serious_Game_Battimix.webp" alt="Serious Game"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Simulation d'Entreprise</p>
+                            <p class="subtitle is-6">Le Serious Game Stratégique</p>
+                            <p class="is-size-6">Pilotage d'une entreprise virtuelle en équipe de 5 face à un marché concurrentiel. Mon équipe s'est hissée en tête du classement des ventes.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/infographie.webp" alt="Infographie Roche-Jagu"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Infographie Scientifique</p>
+                            <p class="subtitle is-6">La Biodiversité de la Roche-Jagu</p>
+                            <p class="is-size-6">Vulgarisation de données scientifiques sur les marais littoraux sous forme d'un support visuel pédagogique réalisé sur Affinity.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/Audit_Al'WestFest.webp" alt="Audit Festival MMI"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Audit de Communication</p>
+                            <p class="subtitle is-6">Le Festival MMI</p>
+                            <p class="is-size-6">Stratégie de communication globale d'un festival étudiant : identité visuelle, charte graphique, communiqués de presse et recherche de sponsors.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card card">
+                        <div class="card-image"><figure class="image is-16by9"><img src="media/photos/affiche_cavan.webp" alt="Marketing Territorial"></figure></div>
+                        <div class="card-content">
+                            <p class="title is-5">Stratégie Marketing</p>
+                            <p class="subtitle is-6">Promouvoir une Ville</p>
+                            <p class="is-size-6">Plan marketing territorial présenté en pitch final devant le Maire et les élus locaux pour attirer touristes et valoriser les atouts de la ville.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BIO -->
+        <section id="bio">
+            <!-- BLOC 1 -->
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center my-6 flex-gap-2">
+                <div class="max-width-700">
+                    <h2 class="title is-3">Salut, moi c'est Lee-Loup !</h2>
+                    <p>
+                        Passionné par les jeux vidéo, l'art, le doublage, le sport et la tech, je suis
+                        quelqu'un qui multiplie ses centres d'intérêt pour élargir constamment ses horizons.
+                        Toujours curieux, j'aime explorer de nouveaux domaines et me dépasser à chaque
+                        nouveau projet. Si vous cherchez un coéquipier investi, créatif et polyvalent,
+                        je suis probablement la personne qu'il vous faut !
+                    </p>
+                </div>
+                <div class="bio-stack">
+                    <img class="bio-img bio-img--back"   src="media/Photos/Bio/Photo1.webp" alt="3 photos de Lee-Loup superposées" >
+                    <img class="bio-img bio-img--front"  src="media/Photos/Bio/Photo2.webp" alt="" >
+                    <img class="bio-img bio-img--back2"  src="media/Photos/Bio/Photo3.webp" alt="" >
+                </div>
+            </div>
+
+            <!-- BLOC 2 -->
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center my-6 flex-gap-2">
+                <div class="bio-stack">
+                    <img class="bio-img bio-img--back"   src="media/Photos/Bio/Islands.webp" alt="Capture d'écran d'un décor Minecraft représentant des îles volantes dans les nuages">
+                    <img class="bio-img bio-img--front"  src="media/Photos/Bio/Museum.webp" alt="Capture d'écran d'un décor Minecraft représentant un musée gigantesque vue des jardins extérieurs dans le style du palais de versailles">
+                    <img class="bio-img bio-img--back2"  src="media/Photos/Bio/Dungeon.webp" alt="Capture d'écran d'un décor Minecraft représentant une entrée de donjon dans la forêt">
+                </div>
+                <div class="max-width-700">
+                    <h2 class="title is-3">Je vous intéresse ?</h2>
+                    <p>
+                        Vraiment ? Trop cool ! Alors... qui suis-je ? Un grand fan de jeux vidéo et de pop culture évidemment !
+                        Je pourrais en parler pendant des heures vraiment...
+                        Mais ce qui m'anime surtout, c'est le game design : me mettre à la place des joueurs et
+                        penser chaque élément pour offrir une expérience vraiment immersive. Depuis plusieurs
+                        années, je travaille en freelance comme builder professionnel sur Minecraft, en collaborant avec
+                        des vidéastes, des serveurs et des particuliers pour créer cartes et décors, parfois
+                        pour des événements, parfois simplement par passion. Je m'investis toujours pleinement
+                        pour produire le meilleur résultat possible !
+                    </p>
+                </div>
+            </div>
+
+            <!-- BLOC 3 -->
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center my-6 flex-gap-2">
+                <div class="max-width-700">
+                    <h2 class="title is-3">Un vrai créatif celui-là !</h2>
+                    <p>
+                        Et oui le dessin est un autre de mes grands passe-temps, et je peux facilement y passer
+                        une dizaine d'heures sans m'arrêter, toujours avec un souci du détail très pointu.
+                        Je puise beaucoup d'inspiration dans les univers fantastiques pour donner vie à mes
+                        personnages. Alors si vous cherchez quelqu'un capable d'imaginer et de créer avec passion,
+                        je suis prêt à donner vie à vos projets, pourquoi ne pas me contacter !
+                    </p>
+                </div>
+                <div class="bio-stack">
+                    <img class="bio-img bio-img--back"   src="media/Photos/Bio/Dragkéros.webp" alt="Un dessin représentant un Dragon Bleu aux ailes jaunes avec des éclairs autour">
+                    <img class="bio-img bio-img--front"  src="media/Photos/Bio/marshadow.webp" alt="Un dessin représentant le pokémon Marshadow dans une forêt de nuit">
+                    <img class="bio-img bio-img--back2"  src="media/Photos/Bio/GrizzelFutur.webp" alt="Un dessin représentant un personnage de fiction issue du monde de Donjons & Dragons, c'est un homme lézard rouge portant une cimeterre par dessus l'épaule">
+                </div>
+            </div>
+        </section>
+
+        <!-- STUDIES CARDS -->
+        <section id="studies">
+            <div class="container px-6 mt-6">
+                <h2 class="title is-3 pt-6">Mes formations</h2>
+                <div class="columns is-gap-5 pb-6">
+
+                    <!-- CARD 1, BUT MMI -->
+                    <div class="column is-flex">
+                        <div class="box w-full">
+                            <div class="tags are-medium pb-2">
+                                <span class="tag is-dark">BUT MMI</span>
+                                <span class="tag is-dark">2025 - En cours</span>
+                            </div>
+                            <h2 class="title is-3 mb-4">BUT MMI, IUT de Lannion</h2>
+                            <p class="pb-4 max-width-500">
+                                Actuellement en première année de Bachelor Universitaire de Technologie en
+                                Métiers du Multimédia et de l'Internet à l'IUT de Lannion, cette formation
+                                pluridisciplinaire correspond exactement à ce que je cherchais.
+                            </p>
+                            <p class="pb-6 max-width-500">
+                                J'y développe des compétences en développement web full-stack, en stratégie
+                                de communication numérique et en création audiovisuelle. Ce qui me plaît
+                                particulièrement, c'est la place accordée à l'UX/UI et à la gestion de projet
+                                multimédia : des disciplines qui font directement écho à ma passion pour le
+                                game design et la conception d'expériences immersives.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2, Bac STI2D -->
+                    <div class="column is-flex">
+                        <div class="box w-full">
+                            <div class="tags are-medium pb-2">
+                                <span class="tag is-dark">Bac STI2D</span>
+                                <span class="tag is-dark">2022 - 2025</span>
+                            </div>
+                            <h2 class="title is-3 mb-4">Bac STI2D, Lycée Colbert, Lorient</h2>
+                            <p class="pb-4 max-width-500">
+                                J'ai obtenu mon Baccalauréat STI2D avec la spécialité SIN (Systèmes
+                                d'Information et Numérique) au Lycée Colbert de Lorient en 2025.
+                            </p>
+                            <p class="pb-6 max-width-500">
+                                Cette filière m'a permis de poser des bases solides en algorithmique, en
+                                réseaux et en conception de solutions technologiques durables. C'est là que
+                                j'ai véritablement pris goût au numérique sous toutes ses formes, et que
+                                j'ai commencé à comprendre la logique derrière les systèmes que j'utilise
+                                aujourd'hui au quotidien dans mes projets.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPETENCES -->
+        <section id="competences">
+
+            <!-- Titre -->
+                <div class="is-flex is-align-items-center is-justify-content-center">
+                    <div class="is-flex is-flex-direction-column is-align-items-center mr-4">
+                        <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                        <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                    </div>
+
+                    <h2 class="title is-2">Mes Compétences</h2>
+
+                    <div class="is-flex is-flex-direction-column is-align-items-center ml-4">
+                        <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                        <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                    </div>
+                </div>
+
+            <div class="row-wrapper py-4 mb-5" id="wrapper1">
+                <div class="row-track is-flex py-4" id="track1"></div>
+            </div>
+
+            <div class="row-wrapper pt-4 pb-6 mt-5" id="wrapper2">
+                <div class="row-track is-flex py-4" id="track2"></div>
+            </div>
+        </section>
+        
+        <!-- PROJECT DETAILS -->
+        <section id="projets">
+
+            <!-- Titre -->
+            <div class="is-flex is-align-items-center is-justify-content-center mb-6">
+                <div class="is-flex is-flex-direction-column is-align-items-center mr-4">
+                    <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                    <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                </div>
+
+                <h2 class="title is-2 mb-0">Mes Projets</h2>
+
+                <div class="is-flex is-flex-direction-column is-align-items-center ml-4">
+                    <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                    <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div id="projectsGrid" class="columns is-multiline"></div>
+
+                <div class="modal" id="projectModal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title" id="modalTitle">Détail du projet</p>
+                            <button class="delete" aria-label="close" id="modalClose"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <div class="modal-image-zone">
+                                <figure class="image is-16by9">
+                                    <img id="modalImage" src="" alt="">
+                                </figure>
+                            </div>
+                            <div class="modal-text-zone">
+                                <p class="subtitle is-5" id="modalSubtitle"></p>
+                                <p class="content" id="modalDescription"></p>
+                                <p class="has-text-weight-semibold">Bilan :</p>
+                                <p id="modalBilan"></p>
+                                <p class="has-text-weight-semibold mt-3">Outils :</p>
+                                <p id="modalTools"></p>
+                            </div>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button class="button is-dark" id="modalCloseAction">Fermer</button>
+                        </footer>
+                    </div>
+                </div>
+
+                </section>
+        
+        <!-- FOOTER -->
+        <section id="footer">
+            <footer id="contacts" class="py-6">
+                <div class="columns is-vcentered is-gapless">
+
+                    <!-- ICÔNES GAUCHE -->
+                    <div class="column is-3 contact-icon-col is-hidden-mobile">
+                    </div>
+
+                    <!-- CONTENU -->
+                    <div class="column is-12-mobile is-6-tablet">
+
+                        <!-- Titre -->
+                        <div class="is-flex is-align-items-center is-justify-content-center mb-4">
+                            <div class="is-flex is-flex-direction-column is-align-items-center mr-4">
+                                <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                                <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                            </div>
+
+                            <h2 class="title is-2">Contactez-moi !</h2>
+
+                            <div class="is-flex is-flex-direction-column is-align-items-center ml-4">
+                                <img src="media/images/Icons/stars.svg"    aria-hidden="true" class="title-deco is-large">
+                                <img src="media/images/Icons/sparkles.svg" aria-hidden="true" class="title-deco is-small">
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="is-size-5 has-text-centered mb-6 px-4">
+                            <strong>Dommage !</strong> C'est déjà la fin, mais je sais que vous voulez en voir plus, alors <strong>contactez-moi</strong> !
+                        </p>
+
+                        <!-- Grille de contacts -->
+                        <div class="columns is-multiline is-justify-content-center ml-6">
+
+                            <div class="column is-5">
+                                <a href="https://linkedin.com" class="has-text-dark is-flex is-align-items-center">
+                                    <span class="icon is-large has-background-dark has-text-white contact-icon is-flex-shrink-0">
+                                        <i class="fa-brands fa-2x fa-linkedin"></i>
+                                    </span>
+                                    <span class="ml-3">Lee-Loup Robert</span>
+                                </a>
+                            </div>
+
+                            <div class="column is-5">
+                                <a href="https://www.instagram.com/leeloup.rbt" class="has-text-dark is-flex is-align-items-center">
+                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                                        <i class="fa-brands fa-2x fa-instagram-square"></i>
+                                    </span>
+                                    <span class="ml-3">@leeloup.rbt</span>
+                                </a>
+                            </div>
+
+                            <div class="column is-5">
+                                <a href="https://discord.com/users/712405862156861603" class="has-text-dark is-flex is-align-items-center">
+                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                                        <i class="fa-brands fa-2x fa-discord"></i>
+                                    </span>
+                                    <span class="ml-3">LucaryTales</span>
+                                </a>
+                            </div>
+
+                            <div class="column is-5">
+                                <a href="https://github.com/LucaryTales" class="has-text-dark is-flex is-align-items-center">
+                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                                        <i class="fa-brands fa-2x fa-github"></i>
+                                    </span>
+                                    <span class="ml-3">LucaryTales</span>
+                                </a>
+                            </div>
+
+                            <div class="column is-5">
+                                <a href="media/CV/CV_Lee-Loup_Robert.pdf" target="_blank" class="has-text-dark is-flex is-align-items-center">
+                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                                        <i class="fa-solid fa-2x fa-download"></i>
+                                    </span>
+                                    <span class="ml-3">Télécharger mon CV</span>
+                                </a>
+                            </div>
+
+                            <div class="column is-5">
+                                <a href="mailto:leeloup.robert@gmail.com" class="has-text-dark is-flex is-align-items-center">
+                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                                        <i class="fa-solid fa-2x fa-square-envelope"></i>
+                                    </span>
+                                    <span class="ml-3">leeloup.robert@gmail.com</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ICÔNES DROITE -->
+                    <div class="column is-3 contact-icon-col is-hidden-mobile">
+                    </div>
+
+                </div>
+            </footer>
+        </section>
+
+        <nav class="navbar is-fixed-bottom p-0 navbar-progress" aria-hidden="true" style="min-height: unset;">
+            <div class="navbar-item pb-1 pt-0 is-block is-fullwidth" style="width: 100%;">
+                <progress id="page-progress" class="progress is-dark is-small" value="0" max="10000">
+                </progress>
+            </div>
+        </nav>
+
+
+    <!-- SCRIPT -->
+    <script src="scripts.js"></script>
+</body>
+</html>
