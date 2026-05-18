@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
     <title>Lee-loup Robert - Portfolio</title>
+    <meta name="description" content="Portfolio de Lee-Loup Robert, étudiant en BUT MMI, développeur front-end, builder Minecraft professionnel et créatif passionné.">
 
     <link rel="stylesheet" href="FontAwesome/css/all.min.css">
     <link rel="stylesheet"href="bulma.css">
@@ -48,6 +49,11 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
+                            <button id="themeToggle" class="button is-ghost is-rounded mr-2" aria-label="Basculer le thème">
+                                <span class="icon is-medium">
+                                    <i class="fas fa-moon fa-lg"></i>
+                                </span>
+                            </button>
                             <a class="button
                                     is-dark
                                     is-outlined
@@ -104,7 +110,7 @@
                             
 
             <!-- TEXTE -->
-            <p class="has-text-centered is-size-5 px-4 mb-6">
+            <p class="has-text-centered is-size-5 px-4 mb-6 reveal">
                 Étudiant en BUT MMI à Lannion, je suis un créatif touche-à-tout passionné de game design,
                 de dessin et d'audiovisuel. Freelance, Builder Minecraft professionnel, Développeur front-end et
                 amateur de doublage, je conçois des expériences qui mêlent esthétique et technique.
@@ -112,7 +118,7 @@
             </p>
 
             <!-- BOUTON -->
-            <div class="is-flex is-justify-content-center mt-5">
+            <div class="is-flex is-justify-content-center mt-5 reveal">
                 <a class="button is-dark is-italic is-rounded is-size-5" href="#bio">
                     <span>On continue ?</span>
                 </a>
@@ -120,7 +126,7 @@
         </section>
         
         <!-- PROJECTS LIST -->
-        <section class="pb-6" id="projects-carousel">
+        <section class="section is-hidden-mobile" id="projects-carousel">
             <div class="carousel-wrapper" id="carouselWrapper">
                 <div class="carousel-track" id="carouselTrack">
 
@@ -156,7 +162,7 @@
                         <div class="card-content">
                             <p class="title is-5">Court-Métrage</p>
                             <p class="subtitle is-6">Last Night</p>
-                            <p class="is-size-6">Production audiovisuelle complète — scénario, tournage et montage sur Davinci — pour un film de sensibilisation à la sécurité routière.</p>
+                            <p class="is-size-6">Production audiovisuelle complète : scénario, tournage et montage sur Davinci pour un film de sensibilisation à la sécurité routière.</p>
                         </div>
                     </div>
 
@@ -246,9 +252,9 @@
         </section>
 
         <!-- BIO -->
-        <section id="bio">
+        <section id="bio" class="section">
             <!-- BLOC 1 -->
-            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center my-6 flex-gap-2">
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center flex-gap-2 reveal">
                 <div class="max-width-700">
                     <h2 class="title is-3">Salut, moi c'est Lee-Loup !</h2>
                     <p>
@@ -260,19 +266,14 @@
                     </p>
                 </div>
                 <div class="bio-stack">
-                    <img class="bio-img bio-img--back"   src="media/photos/bio/photo1.webp" alt="3 photos de Lee-Loup superposées" >
-                    <img class="bio-img bio-img--front"  src="media/photos/bio/photo2.webp" alt="" >
-                    <img class="bio-img bio-img--back2"  src="media/photos/bio/photo3.webp" alt="" >
+                    <img class="bio-img bio-img--back"   src="media/photos/bio/photo1.webp" alt="3 photos de Lee-Loup superposées" loading="lazy">
+                    <img class="bio-img bio-img--front"  src="media/photos/bio/photo2.webp" alt="" loading="lazy">
+                    <img class="bio-img bio-img--back2"  src="media/photos/bio/photo3.webp" alt="" loading="lazy">
                 </div>
             </div>
 
             <!-- BLOC 2 -->
-            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center my-6 flex-gap-2">
-                <div class="bio-stack">
-                    <img class="bio-img bio-img--back"   src="media/photos/bio/islands.webp" alt="Capture d'écran d'un décor Minecraft représentant des îles volantes dans les nuages">
-                    <img class="bio-img bio-img--front"  src="media/photos/bio/museum.webp" alt="Capture d'écran d'un décor Minecraft représentant un musée gigantesque vue des jardins extérieurs dans le style du palais de versailles">
-                    <img class="bio-img bio-img--back2"  src="media/photos/bio/dungeon.webp" alt="Capture d'écran d'un décor Minecraft représentant une entrée de donjon dans la forêt">
-                </div>
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center flex-gap-2 bio-row-reverse reveal">
                 <div class="max-width-700">
                     <h2 class="title is-3">Je vous intéresse ?</h2>
                     <p>
@@ -286,10 +287,15 @@
                         pour produire le meilleur résultat possible !
                     </p>
                 </div>
+                <div class="bio-stack">
+                    <img class="bio-img bio-img--back"   src="media/photos/bio/islands.webp" alt="Capture d'écran d'un décor Minecraft représentant des îles volantes dans les nuages" loading="lazy">
+                    <img class="bio-img bio-img--front"  src="media/photos/bio/museum.webp" alt="Capture d'écran d'un décor Minecraft représentant un musée gigantesque" loading="lazy">
+                    <img class="bio-img bio-img--back2"  src="media/photos/bio/dungeon.webp" alt="Capture d'écran d'un décor Minecraft représentant une entrée de donjon dans la forêt" loading="lazy">
+                </div>
             </div>
 
             <!-- BLOC 3 -->
-            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center my-6 flex-gap-2">
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center flex-gap-2 reveal">
                 <div class="max-width-700">
                     <h2 class="title is-3">Un vrai créatif celui-là !</h2>
                     <p>
@@ -301,21 +307,21 @@
                     </p>
                 </div>
                 <div class="bio-stack">
-                    <img class="bio-img bio-img--back"   src="media/photos/bio/drakeros.webp" alt="Un dessin représentant un Dragon Bleu aux ailes jaunes avec des éclairs autour">
-                    <img class="bio-img bio-img--front"  src="media/photos/bio/marshadow.webp" alt="Un dessin représentant le pokémon Marshadow dans une forêt de nuit">
-                    <img class="bio-img bio-img--back2"  src="media/photos/bio/grizzelfutur.webp" alt="Un dessin représentant un personnage de fiction issue du monde de Donjons & Dragons, c'est un homme lézard rouge portant une cimeterre par dessus l'épaule">
+                    <img class="bio-img bio-img--back"   src="media/photos/bio/drakeros.webp" alt="Un dessin représentant un Dragon Bleu aux ailes jaunes" loading="lazy">
+                    <img class="bio-img bio-img--front"  src="media/photos/bio/marshadow.webp" alt="Un dessin représentant le pokémon Marshadow dans une forêt de nuit" loading="lazy">
+                    <img class="bio-img bio-img--back2"  src="media/photos/bio/grizzelfutur.webp" alt="Un dessin représentant un homme lézard rouge" loading="lazy">
                 </div>
             </div>
         </section>
 
         <!-- STUDIES CARDS -->
-        <section id="studies">
-            <div class="container px-6 mt-6">
-                <h2 class="title is-3 pt-6">Mes formations</h2>
-                <div class="columns is-gap-5 pb-6">
+        <section id="studies" class="section">
+            <div class="container">
+                <h2 class="title is-3">Mes formations</h2>
+                <div class="columns is-gap-5">
 
                     <!-- CARD 1, BUT MMI -->
-                    <div class="column is-flex">
+                    <div class="column is-flex reveal">
                         <div class="box w-full">
                             <div class="tags are-medium pb-2">
                                 <span class="tag is-dark">BUT MMI</span>
@@ -338,7 +344,7 @@
                     </div>
 
                     <!-- CARD 2, Bac STI2D -->
-                    <div class="column is-flex">
+                    <div class="column is-flex reveal">
                         <div class="box w-full">
                             <div class="tags are-medium pb-2">
                                 <span class="tag is-dark">Bac STI2D</span>
@@ -364,7 +370,7 @@
         </section>
 
         <!-- COMPETENCES -->
-        <section id="competences">
+        <section id="competences" class="section">
 
             <!-- Titre -->
                 <div class="is-flex is-align-items-center is-justify-content-center">
@@ -391,7 +397,7 @@
         </section>
         
         <!-- PROJECT DETAILS -->
-        <section id="projets">
+        <section id="projets" class="section">
 
             <!-- Titre -->
             <div class="is-flex is-align-items-center is-justify-content-center mb-6">
@@ -409,6 +415,17 @@
             </div>
 
             <div class="container">
+
+                <!-- Filtres des projets -->
+                <div class="tabs is-centered is-toggle is-toggle-rounded mb-6" id="projectFilters">
+                    <ul>
+                        <li class="is-active" data-filter="all"><a>Tous</a></li>
+                        <li data-filter="dev"><a>Développement</a></li>
+                        <li data-filter="design"><a>Design</a></li>
+                        <li data-filter="audiovisuel"><a>Audiovisuel</a></li>
+                        <li data-filter="com"><a>Strat & Com</a></li>
+                    </ul>
+                </div>
 
                 <div id="projectsGrid" class="columns is-multiline"></div>
 
@@ -443,7 +460,7 @@
                 </section>
         
         <!-- FOOTER -->
-        <section id="footer">
+        <section>
             <footer id="contacts" class="py-6">
                 <div class="columns is-vcentered is-gapless">
 
@@ -452,7 +469,7 @@
                     </div>
 
                     <!-- CONTENU -->
-                    <div class="column is-12-mobile is-6-tablet">
+                    <div class="column is-12-mobile is-6-tablet reveal">
 
                         <!-- Titre -->
                         <div class="is-flex is-align-items-center is-justify-content-center mb-4">
@@ -475,59 +492,59 @@
                         </p>
 
                         <!-- Grille de contacts -->
-                        <div class="columns is-multiline is-justify-content-center ml-6">
+                        <div class="columns is-multiline is-mobile is-justify-content-center ml-6 contacts-grid">
 
-                            <div class="column is-5">
-                                <a href="https://linkedin.com" class="has-text-dark is-flex is-align-items-center">
-                                    <span class="icon is-large has-background-dark has-text-white contact-icon is-flex-shrink-0">
+                            <div class="column is-6-mobile is-5-tablet">
+                                <a href="https://linkedin.com" class="contact-link is-flex is-align-items-center">
+                                    <span class="icon is-large contact-icon is-flex-shrink-0">
                                         <i class="fa-brands fa-2x fa-linkedin"></i>
                                     </span>
-                                    <span class="ml-3">Lee-Loup Robert</span>
+                                    <span class="ml-3 contact-text">Lee-Loup Robert</span>
                                 </a>
                             </div>
 
-                            <div class="column is-5">
-                                <a href="https://www.instagram.com/leeloup.rbt" class="has-text-dark is-flex is-align-items-center">
-                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                            <div class="column is-6-mobile is-5-tablet">
+                                <a href="https://www.instagram.com/leeloup.rbt" class="contact-link is-flex is-align-items-center">
+                                    <span class="icon is-large contact-icon is-flex-shrink-0">
                                         <i class="fa-brands fa-2x fa-instagram-square"></i>
                                     </span>
-                                    <span class="ml-3">@leeloup.rbt</span>
+                                    <span class="ml-3 contact-text">@leeloup.rbt</span>
                                 </a>
                             </div>
 
-                            <div class="column is-5">
-                                <a href="https://discord.com/users/712405862156861603" class="has-text-dark is-flex is-align-items-center">
-                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                            <div class="column is-6-mobile is-5-tablet">
+                                <a href="https://discord.com/users/712405862156861603" class="contact-link is-flex is-align-items-center">
+                                    <span class="icon is-large contact-icon is-flex-shrink-0">
                                         <i class="fa-brands fa-2x fa-discord"></i>
                                     </span>
-                                    <span class="ml-3">LucaryTales</span>
+                                    <span class="ml-3 contact-text">LucaryTales</span>
                                 </a>
                             </div>
 
-                            <div class="column is-5">
-                                <a href="https://github.com/LucaryTales" class="has-text-dark is-flex is-align-items-center">
-                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                            <div class="column is-6-mobile is-5-tablet">
+                                <a href="https://github.com/LucaryTales" class="contact-link is-flex is-align-items-center">
+                                    <span class="icon is-large contact-icon is-flex-shrink-0">
                                         <i class="fa-brands fa-2x fa-github"></i>
                                     </span>
-                                    <span class="ml-3">LucaryTales</span>
+                                    <span class="ml-3 contact-text">LucaryTales</span>
                                 </a>
                             </div>
 
-                            <div class="column is-5">
-                                <a href="media/cv/CV_Lee-Loup_Robert.pdf" target="_blank" class="has-text-dark is-flex is-align-items-center">
-                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                            <div class="column is-6-mobile is-5-tablet">
+                                <a href="media/cv/CV_Lee-Loup_Robert.pdf" target="_blank" class="contact-link is-flex is-align-items-center">
+                                    <span class="icon is-large contact-icon is-flex-shrink-0">
                                         <i class="fa-solid fa-2x fa-download"></i>
                                     </span>
-                                    <span class="ml-3">Télécharger mon CV</span>
+                                    <span class="ml-3 contact-text">Télécharger mon CV</span>
                                 </a>
                             </div>
 
-                            <div class="column is-5">
-                                <a href="mailto:leeloup.robert@gmail.com" class="has-text-dark is-flex is-align-items-center">
-                                    <span class="icon is-large has-background-dark has-text-white" style="border-radius: 8px; flex-shrink: 0;">
+                            <div class="column is-6-mobile is-5-tablet">
+                                <a href="mailto:leeloup.robert@gmail.com" class="contact-link is-flex is-align-items-center">
+                                    <span class="icon is-large contact-icon is-flex-shrink-0">
                                         <i class="fa-solid fa-2x fa-square-envelope"></i>
                                     </span>
-                                    <span class="ml-3">leeloup.robert@gmail.com</span>
+                                    <span class="ml-3 contact-text">leeloup.robert@gmail.com</span>
                                 </a>
                             </div>
 
@@ -541,6 +558,13 @@
                 </div>
             </footer>
         </section>
+
+        <!-- BOUTON RETOUR EN HAUT -->
+        <a id="backToTop" href="#hero" class="button is-dark is-rounded is-medium" aria-label="Retour en haut">
+            <span class="icon">
+                <i class="fas fa-arrow-up"></i>
+            </span>
+        </a>
 
         <nav class="navbar is-fixed-bottom p-0 navbar-progress" aria-hidden="true" style="min-height: unset;">
             <div class="navbar-item pb-1 pt-0 is-block is-fullwidth" style="width: 100%;">
